@@ -1,0 +1,204 @@
+html, body {margin:0;padding:0;height:100%;}
+
+body {
+	font-family: 'HELVETICA', sans-serif;
+}
+a {
+	color: #b71a4c;
+}
+.front-indicator {
+	width: 145px;
+	margin: 5px 32px 15px 32px;
+	/*background-color: #f6f6f6;	*/
+	color: #adadad;
+	text-align: center;
+	padding: 3px;
+	border-radius: 5px;
+}
+.wrapper {
+	width: 100%;
+	text-align: center;
+	height: 100%;
+	background-image: linear-gradient(-82deg, #CFB87A 0%, #BF8D52 40%, #A43042 67%, #100000 92%);
+}
+.container {
+	margin: 0 auto;
+	text-align: left;
+	height: 100%;
+	position: relative;
+}
+.booking-details {
+	float: left;
+	text-align: left;
+	margin-left: 35px;
+	font-size: 12px;
+	position: relative;
+	height: 401px;
+}
+.booking-details h2 {
+	margin: 25px 0 20px 0;
+	font-size: 17px;
+}
+.booking-details h3 {
+	margin: 5px 5px 0 0;
+	font-size: 14px;
+}
+div.seatCharts-cell {
+	color: #182C4E;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	
+}
+div.seatCharts-seat {
+	color: #FFFFFF;
+	cursor: pointer;	
+}
+div.seatCharts-row {
+	height: 35px;
+}
+div.seatCharts-seat.available {
+	background-color: #B9DEA0;
+
+}
+div.seatCharts-seat.available.first-class {
+/* 	background: url(vip.png); */
+	background-color: #3a78c3;
+}
+div.seatCharts-seat.focused {
+	background-color: #76B474;
+}
+div.seatCharts-seat.selected {
+	background-color: #E6CAC4;
+}
+div.seatCharts-seat.unavailable {
+	background-color: #472B34;
+}
+div.seatCharts-container {
+	/*border-right: 1px dotted #adadad;*/
+	/*width: 200px;*/
+	/*padding: 20px;*/
+	float: left;
+	/*position: absolute;*/
+	/*left: 100px;*/
+	z-index: 999;
+}
+div.seatCharts-legend {
+	padding-left: 0px;
+	position: absolute;
+	bottom: 16px;
+}
+ul.seatCharts-legendList {
+	padding-left: 0px;
+}
+span.seatCharts-legendDescription {
+	margin-left: 5px;
+	line-height: 30px;
+}
+.checkout-button {
+	display: block;
+	margin: 10px 0;
+	font-size: 14px;
+}
+#selected-seats {
+	max-height: 90px;
+	overflow-y: scroll;
+	overflow-x: none;
+	width: 170px;
+}
+
+/*
+Font is...HELVETICA
+/ Background Gradient /
+background-image: linear-gradient(-82deg, #100000 0%, #A43042 40%, #BF8D52 67%, #CFB87A 92%);
+/ Bottom Menu Bar Background /
+background: rgba(108,29,41,0.42);
+/ Bottom Left Menu Square Button /
+background: rgba(111,31,43,0.43);
+/ Opaque Button Overlay for Bottom Menu When Pressed /
+background: rgba(201,167,106,0.30);
+/ Right Side Content Box Background and Box /
+background-image: linear-gradient(-130deg, #BC9659 9%, #CBAE71 47%, #CFB87A 60%);
+border-radius: 2px; */
+
+.purchase_section{
+	width:25%;
+	right:80px;
+	background-image: linear-gradient(-130deg, #CFB87A 9%, #CBAE71 47%, #BC9659 60%);
+	border-radius: 2px; 
+}
+
+#seat-map{
+	/*transform:rotate(90deg);*/
+}
+
+.clearfix{
+	float:none;
+	clear:both;
+}
+
+.vertical_center{
+	transform:translateY(-50%);
+	top:50%;
+	position: absolute;
+}
+
+#purchase_btn{
+	background: rgba(108,29,41,0.42);	
+	color:white;
+	display: block;
+	font-size:25px;
+}
+
+.btn{
+	width:100%;
+	text-align: center;
+	padding:20px 0px;
+}
+.header_row{
+	width:100%;
+	margin-bottom: 30px;
+}
+
+.left_wing::before{
+	content:'';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 50px 50px;
+	border-color: transparent transparent #fff transparent;
+	top: -50px;
+    position: absolute;
+}
+
+.right_wing::before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 0 0 50px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.left_wing, .right_wing{
+	width:50px;
+	height:300px;
+	background: white;
+	position: absolute;
+	top: 30%;
+}
+
+.left_wing{
+	left:-21px;
+	z-index: -1;
+}
+
+.right_wing{
+	left:247px;
+}
+
+.seat_container{
+	position: absolute;
+	transform: rotate(90deg);
+    margin: 83px 450px 0;
+}
